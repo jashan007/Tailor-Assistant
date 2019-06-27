@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recovery.recoveryController">
+   <children>
+      <Label layoutX="150.0" layoutY="35.0" text="RESET PASSWORD" textFill="#dd1212" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="107.0" fitWidth="118.0" layoutX="317.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reset.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="170.0" text="ENTER YOUR MOBILE NO">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="121.0" layoutY="315.0" mnemonicParsing="false" onAction="#dosend" text="SEND" />
+      <Button layoutX="237.0" layoutY="315.0" mnemonicParsing="false" onAction="#docancel" text="CANCEL" />
+      <TextField fx:id="txtmobile" layoutX="37.0" layoutY="220.0" />
+   </children>
+</AnchorPane>

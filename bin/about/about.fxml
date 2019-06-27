@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="700.0" minWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="about.aboutController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="644.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sir.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="624.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="7.0" layoutY="350.0" prefHeight="29.0" prefWidth="787.0" />
+      <Label layoutX="15.0" layoutY="81.0" text="Name : RAJESH K BANSAL">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="135.0" text="Academic Qualification : M.Sc(IT) ,MCA (Master Of Computer Application)">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="191.0" text="Founder &amp; Director of Banglore Computer Education">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="246.0" text="Author Of Book : Real Java ( Buy &quot;Real Java&quot; on Amazon.in)">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="299.0" text="Founder &amp; Developer of www.realJavaOnline.com (Learn Java Online)">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="21.0" text="ABOUT" underline="true">
+         <font>
+            <Font name="Algerian" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="398.0" text="Name : JASHANDEEP SINGH">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="452.0" text="COLLEGE : PUNJABI UNIVERSITY">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="512.0" text="JAVA  TAILOR ASSISTANT PROJECT CREATED BY JASHANDEEP SINGH">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="548.0" text="UNDER THE GUIDANCE OF RAJESH K BANSAL">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

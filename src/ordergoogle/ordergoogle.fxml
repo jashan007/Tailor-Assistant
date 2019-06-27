@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="900.0" minWidth="900.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ordergoogle.ordergoogleController">
+   <children>
+      <Label layoutX="364.0" layoutY="14.0" prefHeight="33.0" prefWidth="168.0" text="ORDER GOOGLE" textFill="#eb1919">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="88.0" text="FROM DATE">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="88.0" text="TO DATE">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="683.0" layoutY="131.0" mnemonicParsing="false" onAction="#dofetch1" prefHeight="33.0" prefWidth="126.0" text="FETCH ORDER" />
+      <DatePicker fx:id="txtfromdate" layoutX="32.0" layoutY="132.0" />
+      <DatePicker fx:id="txttodate" layoutX="291.0" layoutY="132.0" />
+      <TableView fx:id="tableView1" layoutX="14.0" layoutY="425.0" prefHeight="392.0" prefWidth="868.0" />
+      <Label layoutX="40.0" layoutY="219.0" text="MOBILE">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="165.0" layoutY="217.0" />
+      <Button layoutX="683.0" layoutY="216.0" mnemonicParsing="false" onAction="#dofetch2" prefHeight="33.0" prefWidth="126.0" text="FETCH " />
+      <Button layoutX="683.0" layoutY="314.0" mnemonicParsing="false" onAction="#dofetch3" prefHeight="33.0" prefWidth="126.0" text="COLLECT DATA" />
+      <Label layoutX="39.0" layoutY="316.0" text="WORKER">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboworker" editable="true" layoutX="198.0" layoutY="315.0" onAction="#selectworker" prefWidth="150.0" />
+      <ComboBox fx:id="combostatus" layoutX="415.0" layoutY="315.0" prefWidth="150.0" />
+      <RadioButton fx:id="rdpending1" layoutX="565.0" layoutY="88.0" mnemonicParsing="false" text="PENDING">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggledate" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rddone1" layoutX="565.0" layoutY="131.0" mnemonicParsing="false" text="DONE" toggleGroup="$toggledate" />
+      <RadioButton fx:id="rdall1" layoutX="565.0" layoutY="174.0" mnemonicParsing="false" text="ALL" toggleGroup="$toggledate" />
+      <RadioButton fx:id="rdall2" layoutX="39.0" layoutY="266.0" mnemonicParsing="false" text="ALL">
+         <toggleGroup>
+            <ToggleGroup fx:id="togglemobile" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rdfinish2" layoutX="236.0" layoutY="266.0" mnemonicParsing="false" text="FINISH" toggleGroup="$togglemobile" />
+      <RadioButton fx:id="rdpending2" layoutX="435.0" layoutY="266.0" mnemonicParsing="false" text="PENDING" toggleGroup="$togglemobile" />
+      <Button layoutX="345.0" layoutY="381.0" mnemonicParsing="false" onAction="#doshowall" prefHeight="33.0" prefWidth="218.0" text="SHOW FILL RECENT RECORD" />
+      <Separator layoutX="5.0" layoutY="53.0" prefHeight="21.0" prefWidth="892.0" />
+      <Separator id="toggledate" layoutX="2.0" layoutY="195.0" prefHeight="21.0" prefWidth="892.0" />
+      <Separator layoutX="2.0" layoutY="293.0" prefHeight="21.0" prefWidth="892.0" />
+      <Separator layoutX="8.0" layoutY="360.0" prefHeight="21.0" prefWidth="892.0" />
+      <Button layoutX="345.0" layoutY="834.0" mnemonicParsing="false" onAction="#doexport" prefHeight="33.0" prefWidth="218.0" text="EXPORT TO EXCEL" />
+   </children>
+</AnchorPane>

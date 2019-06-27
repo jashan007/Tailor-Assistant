@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="measurement.orderController">
+   <children>
+      <Label layoutX="309.0" layoutY="14.0" text="MEASUREMENT" textFill="#d71818" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="129.0" prefHeight="27.0" prefWidth="67.0" text="MOBILE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="267.0" layoutY="127.0" />
+      <Button layoutX="464.0" layoutY="125.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="36.0" prefWidth="81.0" text="FETCH" />
+      <Label layoutX="91.0" layoutY="204.0" prefHeight="27.0" prefWidth="67.0" text="ITEMS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboitems" editable="true" layoutX="309.0" layoutY="202.0" onAction="#dofillitems" prefWidth="150.0" />
+      <Label layoutX="91.0" layoutY="371.0" prefHeight="27.0" prefWidth="91.0" text="WORKERS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listt" layoutX="267.0" layoutY="371.0" onMouseClicked="#doChoose" prefHeight="130.0" prefWidth="187.0" />
+      <Button layoutX="618.0" layoutY="367.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="36.0" prefWidth="81.0" text="UPDATE" />
+      <Label layoutX="86.0" layoutY="554.0" prefHeight="27.0" prefWidth="91.0" text="QUANTITY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtquantity" layoutX="262.0" layoutY="552.0" />
+      <Label layoutX="86.0" layoutY="605.0" prefHeight="27.0" prefWidth="91.0" text="PRICE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="664.0" prefHeight="27.0" prefWidth="91.0" text="TOTAL">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="718.0" prefHeight="27.0" prefWidth="159.0" text="DATE OF DELIVERY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttotal" layoutX="262.0" layoutY="660.0" />
+      <TextField fx:id="txtprice" layoutX="262.0" layoutY="603.0" />
+      <Button layoutX="618.0" layoutY="427.0" mnemonicParsing="false" onAction="#donew" prefHeight="36.0" prefWidth="81.0" text="NEW" />
+      <Button layoutX="618.0" layoutY="496.0" mnemonicParsing="false" onAction="#dosave" prefHeight="36.0" prefWidth="81.0" text="SAVE" />
+      <Button layoutX="618.0" layoutY="559.0" mnemonicParsing="false" onAction="#doclose" prefHeight="36.0" prefWidth="81.0" text="CLOSE" />
+      <TextArea fx:id="txtmeasure" layoutX="576.0" layoutY="102.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="612.0" layoutY="73.0" prefHeight="27.0" prefWidth="128.0" text="MEASUREMENT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combospecializedfor" layoutX="309.0" layoutY="278.0" onAction="#dofillspecializedfor" prefWidth="150.0" />
+      <Label layoutX="91.0" layoutY="280.0" prefHeight="27.0" prefWidth="150.0" text="SPECIALIZED FOR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtdate" layoutX="262.0" layoutY="716.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="900.0" minWidth="1000.0" style="-fx-background-color: #eda678;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.dashboardController">
+   <children>
+      <AnchorPane prefHeight="110.0" prefWidth="1000.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Label layoutX="356.0" layoutY="29.0" prefHeight="46.0" prefWidth="296.0" text="TAILOR DASHBOARD" textFill="#eba478e3" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="82.0" fitWidth="139.0" layoutX="677.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sewing-machine.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="139.0" layoutX="247.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sewing-machine.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="26.0" layoutY="379.0" prefHeight="206.0" prefWidth="489.0" />
+      <AnchorPane layoutY="129.0" prefHeight="769.0" prefWidth="1000.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <ImageView fitHeight="206.0" fitWidth="206.0" layoutX="90.0" layoutY="47.0" onMouseClicked="#tailor" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@tailor1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="192.0" fitWidth="185.0" layoutX="408.0" layoutY="58.0" onMouseClicked="#worker" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@worker.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="193.0" layoutX="716.0" layoutY="47.0" onMouseClicked="#measurement" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@measurement.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="206.0" fitWidth="225.0" layoutX="90.0" layoutY="295.0" onMouseClicked="#customerpanel" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@customerpanel.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="185.0" fitWidth="275.0" layoutX="94.0" layoutY="544.0" onMouseClicked="#orderdelivery" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@orderdelivery.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="162.0" fitWidth="168.0" layoutX="420.0" layoutY="318.0" onMouseClicked="#workerdatabase" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@workerdatabase1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="185.0" fitWidth="178.0" layoutX="724.0" layoutY="309.0" onMouseClicked="#ordergoogle" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ordergoogle.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="150.0" layoutX="442.0" layoutY="570.0" onMouseClicked="#about" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@about.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
